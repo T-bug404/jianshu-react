@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import logoPic from '../../statics/logo.png';
+import styled from "styled-components";
+import logoPic from "../../statics/logo.png";
 
 export const HeaderWrapper = styled.div`
 	z-index: 1;
@@ -32,6 +32,7 @@ export const NavItem = styled.div`
 	padding: 0 15px;
 	font-size: 17px;
 	color: #333;
+	cursor: pointer;
 	&.left {
 		float: left;
 	}
@@ -41,6 +42,9 @@ export const NavItem = styled.div`
 	}
 	&.active {
 		color: #ea6f5a;
+	}
+	&:hover {
+		background: #eee;
 	}
 `;
 
@@ -63,7 +67,7 @@ export const SearchWrapper = styled.div`
 `;
 
 export const NavSearch = styled.input.attrs({
-	placeholder: '搜索'
+	placeholder: "搜索",
 })`
 	width: 160px;
 	height: 38px;
@@ -84,13 +88,13 @@ export const NavSearch = styled.input.attrs({
 		width: 240px;
 	}
 	&.slide-enter {
-		transition: all .2s ease-out;
+		transition: all 0.2s ease-out;
 	}
 	&.slide-enter-active {
 		width: 240px;
 	}
 	&.slide-exit {
-		transition: all .2s ease-out;
+		transition: all 0.2s ease-out;
 	}
 	&.slide-exit-active {
 		width: 160px;
@@ -103,7 +107,7 @@ export const SearchInfo = styled.div`
 	top: 56px;
 	width: 240px;
 	padding: 0 20px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 	background: #fff;
 `;
 
@@ -124,7 +128,7 @@ export const SearchInfoSwitch = styled.span`
 		float: left;
 		font-size: 12px;
 		margin-right: 2px;
-		transition: all .2s ease-in;
+		transition: all 0.2s ease-in;
 		transform-origin: center center;
 	}
 `;
@@ -144,6 +148,10 @@ export const SearchInfoItem = styled.a`
 	border: 1px solid #ddd;
 	color: #787878;
 	border-radius: 3px;
+	&:hover {
+		background: #eee;
+		cursor: pointer;
+	}
 `;
 
 export const Addition = styled.div`
@@ -169,4 +177,4 @@ export const Button = styled.div`
 		color: #fff;
 		background: #ec6149;
 	}
-`
+`;

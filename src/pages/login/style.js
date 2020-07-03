@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const LoginWrapper = styled.div`
 	z-index: 0;
@@ -16,7 +16,7 @@ export const LoginBox = styled.div`
 	margin: 100px auto;
 	padding-top: 20px;
 	background: #fff;
-	box-shadow: 0 0 8px rgba(0,0,0,.1);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 `;
 
 export const Input = styled.input`

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
 	overflow: hidden;
@@ -35,7 +35,7 @@ export const TopicItem = styled.div`
 	line-height: 32px;
 	margin-left: 18px;
 	margin-bottom: 18px;
-	padding-right: 10px
+	padding-right: 10px;
 	background: #f7f7f7;
 	font-size: 14px;
 	color: #000;
@@ -63,7 +63,7 @@ export const ListItem = styled.div`
 	}
 `;
 
-export const ListInfo =	styled.div`
+export const ListInfo = styled.div`
 	width: 500px;
 	float: left;
 	.title {
@@ -105,11 +105,14 @@ export const LoadMore = styled.div`
 	height: 40px;
 	line-height: 40px;
 	margin: 30px 0;
-	background: #a5a5a5;
-	text-align:center;
+	background: green;
+	text-align: center;
 	border-radius: 20px;
 	color: #fff;
 	cursor: pointer;
+	&:hover {
+		background: #eee;
+	}
 `;
 
 export const BackTop = styled.div`
@@ -121,5 +124,8 @@ export const BackTop = styled.div`
 	line-height: 60px;
 	text-align: center;
 	border: 1px solid #ccc;
-	font-size: 14px;
-`
+	font-size: 12px;
+	&:hover {
+		background: #eee;
+	}
+`;
